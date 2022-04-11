@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel ./src/index.html",
+    "prebuild": "npx rimraf build",
+    "build": "parcel build --public-url ./ ./src/index.html --experimental-scope-hoisting --out-dir build"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,10 @@
   "homepage": "https://github.com/istarlet/derby-city-drip-bootstrap#readme",
   "dependencies": {
     "@popperjs/core": "^2.11.5",
-    "bootstrap": "^5.1.3"
+    "bootstrap": "^5.1.3",
+    "parcel": "^2.4.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.1"
   }
 }
