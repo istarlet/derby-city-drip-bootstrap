@@ -1,0 +1,27 @@
+{
+  "name": "derby-city-drip-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "source": "./src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/istarlet/derby-city-drip-bootstrap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/istarlet/derby-city-drip-bootstrap/issues"
+  },
+  "homepage": "https://github.com/istarlet/derby-city-drip-bootstrap#readme",
+  "devDependencies": {
+    "parcel": "^2.4.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
