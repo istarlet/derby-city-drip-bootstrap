@@ -1,16 +1,30 @@
 @import "./abstracts/variables";
 
-// Create your own map
-$custom-colors: (
-  "custom-color": #900,
-);
+// Custom variables
 
-// Required
+// Create your own map
+
+// Import the functions & variables
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-// Merge the maps
-$theme-colors: map-merge($theme-colors, $custom-colors);
+$custom-theme-colors: (
+  "trappeddarkness": #091b21,
+  "freinachtblack": #233237,
+  "hornblendegreen": #204d48,
+  "pistachiocream": #d5e2e2,
+  "duqqabrown": #45230f,
+  "deer": #b98957,
+  "beef-hotpot": #a6592f,
+  "xanthous": #f2b129,
+  "white-smoke": #f2f2f2,
+  "lead": #222222,
+  "africangray": #91999b,
+);
 
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+// Import Bootstrap
 @import "~bootstrap/scss/bootstrap";
