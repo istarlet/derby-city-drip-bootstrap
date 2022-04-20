@@ -1,14 +1,10 @@
+@import "./abstracts/variables";
+
 $primary: #d5e2e2;
 
 // Custom variables
 
 // Create your own map
-
-// Import the functions & variables
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-
 $custom-theme-colors: (
   "trappeddarkness": #091b21,
   "freinachtblack": #233237,
@@ -22,6 +18,13 @@ $custom-theme-colors: (
   "lead": #222222,
   "africangray": #91999b,
 );
+
+// Import the functions & variables
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+
 
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
